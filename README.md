@@ -28,7 +28,7 @@ Chapter [**four**](https://www.oreilly.com/library/view/javascript-testing-with/
 
 ### Considerations
 
-  * I didn't want to touch the function that you kindly helped me to develope, raised questions to be discuss (a million entries of databased?)
+  * I didn't want to touch the function that you kindly helped me to develope.
 
   * Found out that new Set could help me great deal yesterday
 
