@@ -48,6 +48,9 @@ describe('findSameNumberTwo', function(){
   it('Returns a string if result is an empty array', function() {
     expect(findSameNumberTwo([])).toBe('The function indicates no duplicate have been found');
   });
+  it('Returns a string with the numbers inside the array', function() {
+    expect(findSameNumberTwo([1, 3, 10, -1, 0, 3])).toBe('The function finds 3 as being the duplicated');
+  });
   // result is an array
   it('Result is an array', function() {
     let result = [];
@@ -59,6 +62,13 @@ describe('findSameNumberTwo', function(){
 describe('findSameNumberThree', function(){
   it('Defines findSameNumberThre as function', function(){
     expect(typeof findSameNumberThree).toBe('function');
+  });
+  // returns string
+  it('Returns undefined', function() {
+    expect(findSameNumberThree([])).toBe(undefined);
+  });
+  it('Returns undefined', function() {
+    expect(findSameNumberThree([1, 3, 10, -1, 0, 3])).toBe(undefined);
   });
 });
   // define object
@@ -82,5 +92,16 @@ describe('findSameNumberThree', function(){
     });
     it('findSameNumberObj.myString should be a function', function(){
       expect(typeof findSameNumberObj.myString).toBe('function');
+    });
+    // return text sent by Damien
+    // returns string
+    it('Returns a string', function() {
+      let copyArr = [];
+      expect(typeof findSameNumberObj.myString(copyArr)).toBe('string');
+    });
+    it('Returns a string', function() {
+      // it does return the whole series of number as it didn't pass through the four previous functions
+      let copyArr = [1, 3, 10, -1, 0, 3];
+      expect(typeof findSameNumberObj.myString(copyArr)).toBe('string');
     });
   });
