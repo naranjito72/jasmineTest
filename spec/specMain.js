@@ -16,6 +16,11 @@ describe("finsSameNumber", function(){
 it('Tells no number is repeated', function(){
   expect(findSameNumber( [1, 3, 10, -1, 0])).toBe('The function indicates no duplicate have been found');
 });
+// result is an array
+it('Result is an array', function() {
+  let result = [];
+  expect(result).toEqual(jasmine.any(Array));
+});
 });
 
 /********************************************************************************/
@@ -32,8 +37,13 @@ describe('findSameNumberTwo', function(){
     expect(typeof findSameNumberTwo).toBe('function');
   });
   // returns string
-  it('Returns a string', function() {
-    expect(typeof findSameNumberTwo()).toEqual('string');
+  it('Returns a string if result is an empty array', function() {
+    expect(findSameNumberTwo([])).toBe('The function indicates no duplicate have been found');
+  });
+  // result is an array
+  it('Result is an array', function() {
+    let result = [];
+    expect(result).toEqual(jasmine.any(Array));
   });
 })
 /********************************************************************************/
