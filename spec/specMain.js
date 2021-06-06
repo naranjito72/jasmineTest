@@ -93,15 +93,17 @@ describe('findSameNumberThree', function(){
     it('findSameNumberObj.myString should be a function', function(){
       expect(typeof findSameNumberObj.myString).toBe('function');
     });
-    // return text sent by Damien
     // returns string
     it('Returns a string', function() {
       let copyArr = [];
       expect(typeof findSameNumberObj.myString(copyArr)).toBe('string');
     });
     it('Returns a string', function() {
-      // it does return the whole series of number as it didn't pass through the four previous functions
       let copyArr = [1, 3, 10, -1, 0, 3];
+      copyArr = findSameNumberObj.makeCopyArr(copyArr);
+      copyArr = findSameNumberObj.orderNumbers(copyArr);
+      copyArr = findSameNumberObj.filterArr(copyArr);
+      copyArr = findSameNumberObj.makeNewSet(copyArr);
       expect(typeof findSameNumberObj.myString(copyArr)).toBe('string');
     });
   });
