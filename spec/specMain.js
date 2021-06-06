@@ -76,3 +76,40 @@ describe('findSameNumberThree', function(){
       expect(typeof findSameNumberObj.myString).toBe('function');
     });
   });
+// other way?
+describe("Object has got five methods", function(){
+  var arrNum = [];
+  var findSameNumberObj;
+  var makeCopyArr;
+  var orderNumbers;
+  var filterArr;
+  var makeNewSet;
+  var myString;
+
+  beforeEach(function(){
+    findSameNumberObj = {
+      0: makeCopyArr(arrNum),
+      1: orderNumbers(arrNum),
+      2: filterArr(arrNum),
+      3: makeNewSet(arrNum),
+      4: myString(arrNum)
+    };
+  });
+  it("matches object with the pair key/value", function(){
+    expect(findSameNumberObj).toEqual(jasmine.objectContaining({
+      0: makeCopyArr(arrNum)
+    }));
+    expect(findSameNumberObj).toEqual(jasmine.objectContaining({
+      1: orderNumbers(arrNum)
+    }));
+    expect(findSameNumberObj).toEqual(jasmine.objectContaining({
+      2: filterArr(arrNum)
+    }));
+    expect(findSameNumberObj).toEqual(jasmine.objectContaining({
+      3: makeNewSet(arrNum)
+    }));
+    expect(findSameNumberObj).toEqual(jasmine.objectContaining({
+      4: myString(arrNum)
+    }));
+  });
+})
