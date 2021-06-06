@@ -5,7 +5,7 @@
 // Has to be a function
 describe("finsSameNumber", function(){
   // expectations
-  it("Defines what is findSameNumber", function(){
+  it("Defines findSameNumber", function(){
     expect(typeof findSameNumber).toBe('function');
   });
 // if found show the number
@@ -18,10 +18,28 @@ it('Tells no number is repeated', function(){
 });
 });
 
-
+/********************************************************************************/
 // cleanArr
 describe('cleanArr', function(){
-  it('Defines what cleanArr is', function(){
+  it('Defines cleanArr', function(){
     expect(typeof cleanArr).toBe('function');
   });
 });
+/********************************************************************************/
+// findSameNumberTwo
+describe('findSameNumberTwo', function(){
+  it('Defines findSameNumberTwo', function(){
+    expect(typeof findSameNumberTwo).toBe('function');
+  });
+  // returns string
+  it('Returns a string', function() {
+    expect(typeof findSameNumberTwo()).toEqual('string');
+  });
+})
+/********************************************************************************/
+// findSameNumberThree
+describe('findSameNumberThree', function(){
+  it('Defines findSameNumberThree', function(){
+    expect(typeof findSameNumberThree).toBe('function');
+  });
+})
