@@ -5,7 +5,7 @@
 // Has to be a function
 describe("finsSameNumber", function(){
   // expectations
-  it("Defines findSameNumber", function(){
+  it("Defines findSameNumber as function", function(){
     expect(typeof findSameNumber).toBe('function');
   });
 // if found show the number
@@ -33,7 +33,7 @@ describe('cleanArr', function(){
 /********************************************************************************/
 // findSameNumberTwo
 describe('findSameNumberTwo', function(){
-  it('Defines findSameNumberTwo', function(){
+  it('Defines findSameNumberTwo as function', function(){
     expect(typeof findSameNumberTwo).toBe('function');
   });
   // returns string
@@ -49,7 +49,30 @@ describe('findSameNumberTwo', function(){
 /********************************************************************************/
 // findSameNumberThree
 describe('findSameNumberThree', function(){
-  it('Defines findSameNumberThree', function(){
+  it('Defines findSameNumberThre as function', function(){
     expect(typeof findSameNumberThree).toBe('function');
   });
-})
+});
+  // define object
+  describe('findSameNumberObj', function() {
+    it('Defines findSameNumberObj as an Object', function(){
+      let findSameNumberObj = {};
+      expect(findSameNumberObj).toEqual(jasmine.any(Object));
+    });
+    // methods
+    it('findSameNumberObj.makeCopyArr should be a function', function(){
+      expect(typeof findSameNumberObj.makeCopyArr).toBe('function');
+    });
+    it('findSameNumberObj.orderNumbers should be a function', function(){
+      expect(typeof findSameNumberObj.orderNumbers).toBe('function');
+    });
+    it('findSameNumberObj.filterArr should be a function', function(){
+      expect(typeof findSameNumberObj.filterArr).toBe('function');
+    });
+    it('findSameNumberObj.makeNewSet should be a function', function(){
+      expect(typeof findSameNumberObj.makeNewSet).toBe('function');
+    });
+    it('findSameNumberObj.myString should be a function', function(){
+      expect(typeof findSameNumberObj.myString).toBe('function');
+    });
+  });
