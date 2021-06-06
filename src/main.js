@@ -1,4 +1,3 @@
-// here the function
 // container to check
 let arrContainer = [];
 // text to return
@@ -23,6 +22,30 @@ function findSameNumber(arrNum) {
 function cleanArr() {
     arrRepeatedNum = [];
     arrContainer = [];
+}
+/************************** as Soon as you find one skip the rest *********************************/
+function findAdnSkiprest(arrNum) {
+    //  a true friend
+    let found = false;
+    // starting point
+    let i = 0;
+    // I REALLY need to learn this by heart!!!
+    while (!found && i < arrNum.length) {
+        found = arrContainer.includes(arrNum[i]);
+        // use i as reference to iterate through the arr
+        if (found == false) {
+            found;
+            arrContainer.push(arrNum[i]);
+            text = 'The function indicates no duplicate have been found';
+        }
+        // if not you keep increasing
+        i++;
+    }
+    if (found == true) {
+        text = `The function finds ${arrNum[i - 1]} as being the duplicated`;
+    }
+    console.log(`Nuria kasparov. ${text}`);
+    return text;
 }
 /*************************  With new Set ********************************/
 // One IN one OUT

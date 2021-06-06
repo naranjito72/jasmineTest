@@ -1,12 +1,13 @@
-// here the function
+
 // container to check
 let arrContainer: any[] = [];
 // text to return
 let text: string = "";
 // container to place repeated numbers
 let arrRepeatedNum: any[] = [];
+
 // as done yesterday
-function findSameNumber(arrNum): string{
+function findSameNumber(arrNum: number[]): any{
     // find duplicated numbers
     for (let _i = 0; _i < arrNum.length; _i++) {
         // check every number
@@ -24,6 +25,30 @@ function findSameNumber(arrNum): string{
 function cleanArr(){
   arrRepeatedNum = [];
   arrContainer   = [];
+}
+/************************** as Soon as you find one skip the rest *********************************/
+function findAdnSkiprest(arrNum: number[]) {
+  //  a true friend
+  let found: boolean = false;
+  // starting point
+  let i: number = 0;
+  // I REALLY need to learn this by heart!!!
+  while (!found && i < arrNum.length ) {
+    found = arrContainer.includes(arrNum[i]);
+// use i as reference to iterate through the arr
+if(found == false) {
+  found;
+  arrContainer.push(arrNum[i]);
+  text = 'The function indicates no duplicate have been found';
+}
+// if not you keep increasing
+i++;
+  }
+if( found == true) {
+  text = `The function finds ${arrNum[i - 1]} as being the duplicated` ;
+}
+console.log(`Nuria kasparov. ${text}`);
+return text;
 }
 /*************************  With new Set ********************************/
 // One IN one OUT
@@ -68,7 +93,7 @@ return  arrNum.sort();
 },
 
 filterArr(arrNum: number[]): number[]{
-  return arrNum.filter((element, index) => arrNum[index] == arrNum[index + 1]);
+ return arrNum.filter((element, index) => arrNum[index] == arrNum[index + 1]);
 },
 
 makeNewSet(arrNum: number[]): number[]{
