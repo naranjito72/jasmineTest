@@ -39,35 +39,3 @@ A must read about [**Set**](https://developer.mozilla.org/en-US/docs/Web/JavaScr
 [**Filter, Map, Reduce and Sort**](https://dev.to/lberge17/js-array-methods-filter-map-reduce-and-sort-2gcn) JavaScript methods
 
 [**Split, Splice, Slice**](https://medium.com/@jeanpan/javascript-splice-slice-split-745b1c1c05d2) JavaScript methods
-
-### Considerations
-
-  * I didn't want to touch the function that you kindly helped me to develop.
-
-  * Found out that new Set could help me great deal yesterday
-
-  * I DON'T know Jasmine. I need to dig deeper into it, I just made it enough to sort the problem that you sent me
-
-  * I WILL during the weekend work a bit more the test unit
-
-### Considerations II
-
-Although I worked with objects as containers of data (key: value) and instances of Classes, wasn't until today that I realised that I could use them as containers of functions perse (key: value still)
-as a standalone entity. Right now seems pretty obvious, but somehow I always split Objects as two different things. Both (N and D) pointed out to me about some facts in programming that, in my eager to
-learn as fast as I could, I overstepped. Most definitely I need to read theory as much as I scan Stack Overflow answers.
-
-### Considerations III 
-
-D has been right all the way through. Just a link and a bit of reading and found a way out with the function by myself. 
-
-<!--
-"What you know" by Two Door Cinema Club
-"My Type" by Saint Motel
-"Counting Down the days (feat. Gemma Hayes)" by Above & Beyond
-"Young Folks" by Peter Björn and John
-"3 Nights" by Dominic Fike
-"White Lies" by Max Frost
-"Tongue Tied" by Atlantic Records
-"Hans Zimmer - S.T.A.Y (Madis remix)Theme INTERSTELLAR" by MadisMusic
-
--->
