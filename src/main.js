@@ -1,7 +1,7 @@
 // find match and skip the search
 const arrOne = [1, 2, 3, 4, 5, 6, 1, 2, 3];
-let numberContainer = [];
 function findNumberAndSkip(arrNum) {
+    let numberContainer = [];
     let i = arrNum.length;
     let found = false;
     while ((i--) && found == false) {
@@ -10,6 +10,7 @@ function findNumberAndSkip(arrNum) {
             found = true;
         }
     }
+    (numberContainer.length == 0) ? numberContainer = undefined : numberContainer;
     return numberContainer;
 }
 findNumberAndSkip(arrOne);
