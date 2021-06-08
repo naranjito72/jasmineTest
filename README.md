@@ -34,6 +34,12 @@ Get all non unique values @[**Stack Overflow**](https://stackoverflow.com/questi
 
 A very interestin [**DRY**](https://thevaluable.dev/dry-principle-cost-benefit-example/) lecture by [*Mattheiu Cneude*](https://thevaluable.dev/page/about/)
 
+A must read about [**Set**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set);
+
+[**Filter, Map, Reduce and Sort**](https://dev.to/lberge17/js-array-methods-filter-map-reduce-and-sort-2gcn) JavaScript methods
+
+[**Split, Splice, Slice**](https://medium.com/@jeanpan/javascript-splice-slice-split-745b1c1c05d2) JavaScript methods
+
 ### Considerations
 
   * I didn't want to touch the function that you kindly helped me to develop.
@@ -49,6 +55,10 @@ A very interestin [**DRY**](https://thevaluable.dev/dry-principle-cost-benefit-e
 Although I worked with objects as containers of data (key: value) and instances of Classes, wasn't until today that I realised that I could use them as containers of functions perse (key: value still)
 as a standalone entity. Right now seems pretty obvious, but somehow I always split Objects as two different things. Both (N and D) pointed out to me about some facts in programming that, in my eager to
 learn as fast as I could, I overstepped. Most definitely I need to read theory as much as I scan Stack Overflow answers.
+
+### Considerations III 
+
+D has been right all the way through. Just a link and a bit of reading and found a way out with the function by myself. 
 
 <!--
 "What you know" by Two Door Cinema Club
