@@ -1,5 +1,4 @@
 // find match and skip the search
-const arrOne = [1, 2, 3, 4, 5, 6, 1, 2, 3];
 function findNumberAndSkip(arrNum) {
     let numberContainer = [];
     let i = arrNum.length;
@@ -13,4 +12,3 @@ function findNumberAndSkip(arrNum) {
     (numberContainer.length == 0) ? numberContainer = undefined : numberContainer;
     return numberContainer;
 }
-findNumberAndSkip(arrOne);
