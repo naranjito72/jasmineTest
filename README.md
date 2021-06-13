@@ -39,3 +39,15 @@ A must read about [**Set**](https://developer.mozilla.org/en-US/docs/Web/JavaScr
 [**Filter, Map, Reduce and Sort**](https://dev.to/lberge17/js-array-methods-filter-map-reduce-and-sort-2gcn) JavaScript methods
 
 [**Split, Splice, Slice**](https://medium.com/@jeanpan/javascript-splice-slice-split-745b1c1c05d2) JavaScript methods
+
+<!--
+"What you know" by Two Door Cinema Club
+"My Type" by Saint Motel
+"Counting Down the days (feat. Gemma Hayes)" by Above & Beyond
+"Young Folks" by Peter Björn and John
+"3 Nights" by Dominic Fike
+"White Lies" by Max Frost
+"Tongue Tied" by Atlantic Records
+"Hans Zimmer - S.T.A.Y (Madis remix)Theme INTERSTELLAR" by MadisMusic
+
+-->
